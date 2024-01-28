@@ -9,7 +9,7 @@ const Index = ({ }) => {
   return (
     <React.Fragment>
       <Carousel />
-      <Campaigns />
+      {/*<Campaigns />*/}
       {/*<MenuWrapper categoryList={categoryList} productList={productList} />*/}
       <About />
       <Reservation />
