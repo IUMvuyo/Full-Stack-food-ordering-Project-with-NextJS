@@ -52,14 +52,7 @@ const Header = () => {
             >
               <Link href="/about">About</Link>
             </li>
-            <li
-              className={`px-[5px] py-[10px] uppercase hover:text-primary cursor-pointer ${
-                router.asPath === "/reservation" && "text-primary"
-              }`}
-              onClick={() => setIsMenuModal(false)}
-            >
-              <Link href="/reservation">Book Table</Link>
-            </li>
+
           </ul>
           {isMenuModal && (
             <button
@@ -100,9 +93,7 @@ const Header = () => {
               </span>
             </span>
           </Link>
-          <button onClick={() => setIsSearchModal(true)}>
-            <FaSearch className="hover:text-primary transition-all cursor-pointer" />
-          </button>
+
           <a href="#" className="md:inline-block hidden sm">
             <button className="btn-primary">Order Online</button>
           </a>
